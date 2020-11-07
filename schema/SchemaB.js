@@ -10,6 +10,10 @@ cube(`B`, {
 
   measures: {
     birth_count: {
+      type: `count`,
+      sql: `birth_count`,
+    },
+    birth_sum: {
       type: `sum`,
       sql: `birth_count`,
     },
