@@ -20,22 +20,16 @@ CUBEJS_DB_TYPE=athena
 CUBEJS_API_SECRET=*******************************************
 ```
 
-## install dependancy
-```
-$npm install
-or
-$yarn
-```
-
 ## run
-```
-$npm run dev
-or
-$yarn dev
-```
 
-## Cube.js API
-http://localhost:4000
+### Cube.js Playground
+```
+$ yarn playground
+```
+- http://localhost:4000
 
-## Dashboard website based on React
-http://localhost:3000
+### Dashboard website based on React
+```
+$ yarn dashboard
+```
+- http://localhost:3000
