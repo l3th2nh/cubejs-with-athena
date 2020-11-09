@@ -8,10 +8,10 @@ import cubejs from '@cubejs-client/core';
 import { CubeProvider } from '@cubejs-client/react';
 import client from './graphql/client';
 import Header from './components/Header';
-const API_URL = "http://localhost:4000";
+
 const CUBEJS_TOKEN = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2MDQ3NDY0NDcsImV4cCI6MTYwNDgzMjg0N30.34krqe0XEn7uxyEVAGpEN6kyGS7xc_J9RkS3Y4lHZmA";
 const cubejsApi = cubejs(CUBEJS_TOKEN, {
-  apiUrl: `${API_URL}/cubejs-api/v1`
+  apiUrl: `${process.env.REACT_APP_API_URL}/cubejs-api/v1`
 });
 
 const AppLayout = ({
